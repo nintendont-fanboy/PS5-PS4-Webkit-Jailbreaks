@@ -1,7 +1,7 @@
 # PS5 and PS4 Webkit Jailbreaks PI Server
 
 
-this is an my version of install script based on <a href=https://github.com/stooged/PS5-PI-Server>PS5-PI-Server</a> by stooged to setup a dns server(blocker), web server, wifi access point and a exploit host on a raspberry pi.<br>
+this is my version of install script based on <a href=https://github.com/stooged/PS5-PI-Server>PS5-PI-Server</a> by stooged to setup a dns server(blocker), web server, wifi access point and a exploit host on a raspberry pi.<br>
 
 the script will prompt you to install a ftp server and setup a samba share to access the exploit/payload files.<br>
 you can setup either one or both or none at all.<br>
