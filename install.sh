@@ -278,6 +278,23 @@ break;;
 * ) echo -e '\033[31mPlease answer Y or N\033[0m';;
 esac
 done
+while true; do
+read -p "$(printf '\r\n\r\n\033[36mnDo you want to setup an NFS share for itemzflow? (Y|N):\033[0m ')" nfsq
+case $nfsq in
+[Yy]* ) 
+sudo apt install nfs-kernel-server -y
+sudo mkdir /mnt/ps5
+sudo chown -R "$USR":"$USR" /mnt/ps5
+sudo chmod -R 755 /mnt/ps5
+echo "/mnt/ps5 *(rw,all_squash,insecure,async,no_subtree_check,anonuid=1000,anongid=1000)" | sudo tee -a /etc/exports
+sudo exportfs -ra
+echo -e '\033[32mNFS installed\033[0m'
+break;;
+[Nn]* ) echo -e '\033[35mSkipping NFS install\033[0m'
+break;;
+* ) echo -e '\033[31mPlease answer Y or N\033[0m';;
+esac
+done
 HSTN=$(hostname | cut -f1 -d' ')
 if [[ ! $HSTN == "ps5" ]] ;then
 sudo sed -i "s^$HSTN^ps5^g" /etc/hosts

@@ -42,7 +42,7 @@ once you have done that just run the following commands:
 
 ```sh
 sudo apt update
-sudo apt install git -y
+sudo apt install git vim -y
 sudo git clone https://github.com/nintendont-fanboy/PS5-PS4-Webkit-Jailbreaks
 cd PS5-PS4-Webkit-Jailbreaks
 sudo chmod 777 install.sh
