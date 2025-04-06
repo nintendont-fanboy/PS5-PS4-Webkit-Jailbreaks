@@ -38,7 +38,7 @@ const payload_map = [
         fileName: "etaHEN.bin",
         author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
         projectSource: "https://github.com/LightningMods/etaHEN",
-        binarySource: "https://github.com/LightningMods/etaHEN/releases/download/1.9b/etaHEN.bin",
+        binarySource: "https://github.com/LightningMods/etaHEN/releases/download/2.0b/etaHEN.bin",
         version: "1.9b",
         supportedFirmwares: ["3.", "4."]
     },
@@ -48,7 +48,7 @@ const payload_map = [
         fileName: "etaHEN.bin",
         author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
         projectSource: "https://github.com/LightningMods/etaHEN",
-        binarySource: "https://github.com/LightningMods/etaHEN/releases/download/1.9b/etaHEN.bin",
+        binarySource: "https://github.com/LightningMods/etaHEN/releases/download/2.0b/etaHEN.bin",
         version: "1.9b",
         supportedFirmwares: ["1.", "2."],
         toPort: 9021
