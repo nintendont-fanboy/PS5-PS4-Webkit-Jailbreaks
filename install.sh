@@ -21,6 +21,10 @@ echo 'server {
 	location / {
 		try_files $uri $uri/ =404;
 	}
+    include mime.types;
+    types {
+        application/javascript js mjs;
+    }
 }' | sudo tee /etc/nginx/sites-enabled/default
 sudo cp index.html /var/www/html
 sudo cp -r document /var/www/html/
